@@ -1,0 +1,11 @@
+stream_fldfilename_ndep = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1x1pt_PE-QFR.nc
+stream_fldfilename_popdens = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/firedata/clmforc.Li_2012_hdm_0.5x0.5_AVHRR_simyr1850-2010_c130401.nc
+fpftdyn = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/surfdata_map/surfdata.pftdyn_1x1pt_PE-QFR.nc
+fatmlndfrc = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/share/domains/domain.clm/domain.lnd.1x1pt_PE-QFR_navy.nc
+fsnowoptics = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc
+fsurdat = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/surfdata_map/surfdata_1x1pt_PE-QFR.nc
+fsnowaging = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+finidat = /home/grifbake/fyuan/Model/ELM_SPRUCE/run/PE-QFR_I1850CLM45CN_finalspinup/run/PE-QFR_I1850CLM45CN_finalspinup.clm2.r.0051-01-01-00000.nc 
+fpftcon = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/paramdata/clm_params_PE-QFR_Iquitos.nc
+megan_factors_file = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/atm/cam/chem/trop_mozart/emis/megan21_emis_factors_c20120313.nc
+stream_fldfilename_lightng = /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/atm/datm7/NASA_LIS/clmforc.Li_2012_climo1995-2011.T62.lnfm_c130327.nc

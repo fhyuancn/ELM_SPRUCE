@@ -1,0 +1,55 @@
+&clm_inparm
+ albice = 0.60,0.40
+ co2_type = 'diagnostic'
+ create_crop_landunit = .false.
+ dtime = 1800
+ fatmlndfrc = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/share/domains/domain.clm/domain.lnd.1x1pt_PE-QFR_navy.nc'
+ finidat = '/home/grifbake/fyuan/Model/ELM_SPRUCE/run/PE-QFR_I1850CLM45CN_finalspinup/run/PE-QFR_I1850CLM45CN_finalspinup.clm2.r.0051-01-01-00000.nc '
+ fpftcon = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/paramdata/clm_params_PE-QFR_Iquitos.nc'
+ fpftdyn = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/surfdata_map/surfdata.pftdyn_1x1pt_PE-QFR.nc'
+ fsnowaging = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
+ fsnowoptics = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_c090915.nc'
+ fsurdat = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/surfdata_map/surfdata_1x1pt_PE-QFR.nc'
+ hist_dov2xy = .true.,.false.
+ hist_fincl1 = 'Rnet', 'ALBD', 'ALBGRD', 'ALBGRI', 'ALBI', 'RAIN', 'TOTPFTC', 'TOTPFTN', 'EFLX_SOIL_GRND', 'EFLX_GNET'
+ hist_mfilt = 365
+ hist_nhtfrq = -24
+ maxpatch_glcmec = 0
+ more_vertlayers = .false.
+ nsegspc = 20
+ spinup_state = 0
+ urban_hac = 'ON'
+ urban_traffic = .false.
+/
+&ndepdyn_nml
+ model_year_align_ndep = 1850
+ ndepmapalgo = 'bilinear'
+ stream_fldfilename_ndep = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/ndepdata/fndep_clm_hist_simyr1849-2006_1x1pt_PE-QFR.nc'
+ stream_year_first_ndep = 1850
+ stream_year_last_ndep = 2005
+/
+&popd_streams
+ model_year_align_popdens = 1850
+ popdensmapalgo = 'bilinear'
+ stream_fldfilename_popdens = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/lnd/clm2/firedata/clmforc.Li_2012_hdm_0.5x0.5_AVHRR_simyr1850-2010_c130401.nc'
+ stream_year_first_popdens = 1850
+ stream_year_last_popdens = 2010
+/
+&light_streams
+ lightngmapalgo = 'bilinear'
+ stream_fldfilename_lightng = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/atm/datm7/NASA_LIS/clmforc.Li_2012_climo1995-2011.T62.lnfm_c130327.nc'
+ stream_year_first_lightng = 0001
+ stream_year_last_lightng = 0001
+/
+&clm_hydrology1_inparm
+/
+&clm_soilhydrology_inparm
+/
+&microbepar_in
+/
+#!--------------------------------------------------------------------------------------------------------------------------
+#! lnd_in:: Comment:
+#! This namelist was created using the following command-line:
+#!     /panfs/jay/groups/11/grifbake/fyuan/Model/ELM_SPRUCE/models/lnd/clm/bld/CLM build-namelist -infile /home/grifbake/fyuan/Model/ELM_SPRUCE/scripts/PE-QFR_I20TRCLM45CN/Buildconf/clmconf/cesm_namelist -csmdata /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata -inputdata /home/grifbake/fyuan/Model/ELM_SPRUCE/scripts/PE-QFR_I20TRCLM45CN/Buildconf/clm.input_data_list -ignore_ic_year -namelist &clm_inparm start_ymd = 19800101  / -use_case 20thC_transient -res 1x1pt_PE-QFR -clm_usr_name 1x1pt_PE-QFR -clm_start_type default -l_ncpl 48 -lnd_frac /home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/share/domains/domain.clm/domain.lnd.1x1pt_PE-QFR_navy.nc -glc_nec 0 -co2_ppmv 367.0 -co2_type diagnostic -config /home/grifbake/fyuan/Model/ELM_SPRUCE/scripts/PE-QFR_I20TRCLM45CN/Buildconf/clmconf/config_cache.xml -mask navy
+#! For help on options use: /panfs/jay/groups/11/grifbake/fyuan/Model/ELM_SPRUCE/models/lnd/clm/bld/CLM build-namelist -help
+#!--------------------------------------------------------------------------------------------------------------------------

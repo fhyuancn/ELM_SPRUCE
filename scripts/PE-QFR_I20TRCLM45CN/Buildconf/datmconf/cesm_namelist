@@ -1,0 +1,9 @@
+&datm_inparm 
+
+
+
+ datamode = 'CLMNCEP'
+ domainfile = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/domain/domain.lnd.1x1pt_PE-QFR_navy.nc'
+
+taxmode = 'cycle', 'extend'
+/ 

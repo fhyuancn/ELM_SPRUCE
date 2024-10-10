@@ -1,0 +1,56 @@
+#
+# Makefile Macros generated from /panfs/jay/groups/11/grifbake/fyuan/Model/ELM_SPRUCE/scripts/ccsm_utils/Machines/config_compilers.xml using
+# COMPILER=gnu
+# OS=LINUX
+# MACH=agate
+#
+CPPDEFS+= -DFORTRANUNDERSCORE -DNO_R16 -DLINUX -DCPRGNU 
+
+LDFLAGS+=-L/home/grifbake/fyuan/Software_Modules_agate/netcdf/netcdf-fortran_gcc_8.2.0/lib -L/home/grifbake/fyuan/Software_Modules/zlib/1.2.11_gcc_8.2.0_agate/lib -L/home/grifbake/fyuan/Software_Modules_agate/pnetcdf/1.12.1_gcc_8.2.0/lib -L/home/grifbake/fyuan/Software_Modules_agate/hdf5/1.12.0_gcc_8.2.0/lib -L/usr/lib64 -L/usr/lib -lnetcdf -lnetcdff -lpnetcdf -lhdf5_hl -lhdf5 -lm -ldl -lz -lblas -llapack
+
+CFLAGS:= -O -mcmodel=medium
+
+CXX_LINKER:=FORTRAN
+
+FC_AUTO_R8:= -fdefault-real-8 
+
+FFLAGS:= -O -mcmodel=medium -fconvert=big-endian -ffree-line-length-none -ffixed-line-length-none
+
+FFLAGS_NOOPT:= -O0 
+
+FIXEDFLAGS:=  -ffixed-form 
+
+FREEFLAGS:= -ffree-form 
+
+MPICC:=/home/grifbake/fyuan/Software_Modules_agate/mpich/3.3.2_gcc_8.2.0/bin/mpicc
+
+MPICXX:=/home/grifbake/fyuan/Software_Modules_agate/mpich/3.3.2_gcc_8.2.0/bin/mpicxx
+
+MPIFC:=/home/grifbake/fyuan/Software_Modules_agate/mpich/3.3.2_gcc_8.2.0/bin/mpifort
+
+MPI_LIB_NAME:=mpich,mpi-serial
+
+NETCDF_PATH:=/home/grifbake/fyuan/Software_Modules_agate/netcdf/netcdf-fortran_gcc_8.2.0
+
+SCC:=/common/software/install/spack/linux-centos7-ivybridge/gcc-7.2.0/gcc-8.2.0-hisn3flufch44ed3szj6ucnx5a7mt6q7/bin/gcc
+
+SCXX:=/common/software/install/spack/linux-centos7-ivybridge/gcc-7.2.0/gcc-8.2.0-hisn3flufch44ed3szj6ucnx5a7mt6q7/bin/g++
+
+SFC:=/common/software/install/spack/linux-centos7-ivybridge/gcc-7.2.0/gcc-8.2.0-hisn3flufch44ed3szj6ucnx5a7mt6q7/bin/gfortran
+
+SUPPORTS_CXX:=TRUE
+
+ifeq ($(DEBUG), TRUE) 
+   FFLAGS += -g -Wall 
+endif
+
+ifeq ($(compile_threaded), true) 
+   FFLAGS += -fopenmp
+   CFLAGS += -fopenmp
+   LDFLAGS += -fopenmp
+endif
+
+ifeq ($(MODEL), cism) 
+   CMAKE_OPTS += -D CISM_GNU=ON 
+endif
+

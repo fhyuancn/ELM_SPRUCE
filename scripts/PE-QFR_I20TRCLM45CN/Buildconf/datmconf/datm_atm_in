@@ -1,0 +1,13 @@
+&shr_strdata_nml
+ datamode = 'CLMNCEP'
+ domainfile = '/home/grifbake/fyuan/Model/CLM_SPRUCE/inputdata/domain/domain.lnd.1x1pt_PE-QFR_navy.nc'
+ dtlimit = 1.5,1.5
+ fillalgo = 'nn','nn'
+ fillmask = 'nomask','nomask'
+ mapalgo = 'nn','nn'
+ mapmask = 'nomask','nomask'
+ streams = "datm.streams.txt.CLM1PT.CLM_USRDAT 1 2018 2019", "datm.streams.txt.presaero.trans_1850-2000 1849 1849 2006"
+ taxmode = 'cycle','extend'
+ tintalgo = 'nearest','linear'
+ vectors = 'null'
+/

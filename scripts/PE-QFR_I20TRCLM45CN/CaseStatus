@@ -1,0 +1,6 @@
+create_newcase -case /home/grifbake/fyuan/Model/ELM_SPRUCE/scripts/PE-QFR_I20TRCLM45CN -mach agate -compset I20TRCLM45CN -res CLM_USRDAT -compiler gnu -mpilib mpich
+case created 2024-10-10 10:01:11
+cesm_setup -clean 2024-10-10 10:01:21
+ 
+build complete 2024-10-10 10:03:58
+run started 2024-10-10 10:05:10
